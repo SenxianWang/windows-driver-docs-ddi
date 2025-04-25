@@ -91,7 +91,7 @@ sizeof(PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE) + ((ObjectCount-1) * sizeof(PEP_ACPI
 
 If the input value specified in the **ObjectBufferSize** member is less than the required size, the PEP overwrites the **ObjectBufferSize** input value with the required size, and sets the **Status** member to STATUS_BUFFER_TOO_SMALL. In response, PoFx will allocate a buffer of the required size and send a second [PEP_NOTIFY_ACPI_ENUMERATE_DEVICE_NAMESPACE](ns-pepfx-_pep_acpi_enumerate_device_namespace.md) notification to the PEP for this device.
 
-## -see-also
+## -see-also--
 
 - [PEP_ACPI_OBJECT_NAME_WITH_TYPE](./ns-pepfx-_pep_acpi_object_name_with_type.md)
 - [PEP_NOTIFY_ACPI_ENUMERATE_DEVICE_NAMESPACE](./ns-pepfx-_pep_acpi_enumerate_device_namespace.md)
